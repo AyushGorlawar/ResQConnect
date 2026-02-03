@@ -17,3 +17,8 @@ To improve the speed, accuracy, and efficiency of animal rescue operations using
 
 ![Empathy Chart](https://github.com/AyushGorlawar/ResQConnect/blob/main/Empathy.jpg)
 
+
+## 👨‍💻 Created By
+
+- **Ayush** – [GitHub](https://github.com/AyushGorlawar)
+- **Vrinda** – [GitHub](https://github.com/vrinda8331-prog)
