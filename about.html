@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ResQConnect</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="ResQConnect Logo" class="logo-image" width="40" height="40">
+                    <span class="logo-text">ResQConnect</span>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link active">About</a>
+                    <a href="admin-dashboard.html" class="nav-link">Admin</a>
+                    <a href="rescue-form.html" class="btn btn-primary btn-sm">Report Emergency</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1 class="page-title">About ResQConnect</h1>
+                <p class="page-subtitle">Revolutionizing Animal Rescue Through Technology</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p class="section-text">
+                        ResQConnect bridges the gap between animal rescuers and NGOs through instant digital coordination. 
+                        We believe every animal deserves timely medical attention and care, and every second counts in emergency situations.
+                    </p>
+                    <p class="section-text">
+                        By eliminating dependency on phone calls and manual communication, we enable faster response times, 
+                        accurate location sharing, and efficient management of multiple rescue requests simultaneously.
+                    </p>
+                </div>
+                <div class="about-image-box">
+                    <div class="mission-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="currentColor">
+                            <path d="M40 10L48 26L66 30L53 43L56 61L40 52L24 61L27 43L14 30L32 26L40 10Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="about-section bg-gray">
+        <div class="container">
+            <h2 class="section-title text-center">The Problem We Solve</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 5C13.37 5 8 10.37 8 17c0 8.75 12 22 12 22s12-12.92 12-22c0-6.63-5.37-12-12-12zm0 16.25c-2.35 0-4.25-1.9-4.25-4.25s1.9-4.25 4.25-4.25 4.25 1.9 4.25 4.25-1.9 4.25-4.25 4.25z"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem-title">Inaccurate Locations</h3>
+                    <p class="problem-text">Callers often fail to provide accurate location details, especially in unknown areas, causing delayed response.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M10 7.5c-1.1 0-2 .9-2 2v21c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2v-21c0-1.1-.9-2-2-2H10zm10 5c2.5 0 4.5 2 4.5 4.5s-2 4.5-4.5 4.5-4.5-2-4.5-4.5 2-4.5 4.5-4.5zm9 16H11v-1.5c0-3.33 6.67-5 9-5s9 1.67 9 5v1.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem-title">Communication Gaps</h3>
+                    <p class="problem-text">Miscommunication between rescuers and NGOs leads to confusion and inefficient rescue operations.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 3.33C10.8 3.33 3.33 10.8 3.33 20S10.8 36.67 20 36.67 36.67 29.2 36.67 20 29.2 3.33 20 3.33zm0 30C12.64 33.33 6.67 27.36 6.67 20S12.64 6.67 20 6.67 33.33 12.64 33.33 20 27.36 33.33 20 33.33zm.83-21.66h-2.5v10l8.75 5.25 1.25-2.05-7.5-4.45v-8.75z"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem-title">Multiple Requests</h3>
+                    <p class="problem-text">NGOs struggle to handle multiple simultaneous calls without a centralized digital tracking system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title text-center">Our Solution</h2>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="solution-number">01</div>
+                    <h3 class="solution-title">GPS Location Sharing</h3>
+                    <p class="solution-text">Automatic location detection ensures accurate pinpointing of rescue locations, eliminating communication errors.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">02</div>
+                    <h3 class="solution-title">Digital Request Management</h3>
+                    <p class="solution-text">Centralized admin dashboard allows NGOs to view, filter, and manage all rescue requests efficiently.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">03</div>
+                    <h3 class="solution-title">Priority-Based Sorting</h3>
+                    <p class="solution-text">Urgency levels help NGOs prioritize critical cases and respond to life-threatening situations first.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">04</div>
+                    <h3 class="solution-title">Real-Time Updates</h3>
+                    <p class="solution-text">Status tracking keeps everyone informed about rescue progress from pending to rescued.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="about-section bg-primary">
+        <div class="container">
+            <div class="impact-content">
+                <h2 class="impact-title">Making a Real Impact</h2>
+                <p class="impact-text">
+                    ResQConnect demonstrates a scalable and practical digital rescue system that enables faster rescue response, 
+                    reduces dependency on phone calls, and improves coordination for critical cases.
+                </p>
+                <div class="impact-features">
+                    <div class="impact-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <span>Faster response through accurate location sharing</span>
+                    </div>
+                    <div class="impact-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <span>Efficient management of multiple rescue requests</span>
+                    </div>
+                    <div class="impact-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <span>Improved coordination and prioritization</span>
+                    </div>
+                    <div class="impact-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <span>Timely medical attention for distressed animals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta">
+        <div class="container">
+            <h2 class="cta-title">Join Our Mission</h2>
+            <p class="cta-description">Help us save more lives by reporting animal emergencies or partnering with us as an NGO.</p>
+            <div class="cta-buttons">
+                <a href="rescue-form.html" class="btn btn-primary btn-lg">Report Emergency</a>
+                <a href="admin-dashboard.html" class="btn btn-outline btn-lg">Become an NGO Partner</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-enhanced">
+        <div class="container">
+            <div class="footer-content-enhanced">
+                <div class="footer-brand-enhanced">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="ResQConnect Logo" class="logo-image" width="48" height="48">
+                        <span class="logo-text">ResQConnect</span>
+                    </div>
+                    <p class="footer-tagline-enhanced">Emergency animal rescue coordination platform. Every second counts, every life matters.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.477 0 0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.879V12.89h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.989C16.343 19.129 20 14.99 20 10c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zM10 0C7.284 0 6.944.012 5.877.06 2.246.227.228 2.242.06 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-enhanced">
+                    <div class="footer-column-enhanced">
+                        <h4 class="footer-heading-enhanced">Platform</h4>
+                        <a href="index.html" class="footer-link-enhanced">Home</a>
+                        <a href="about.html" class="footer-link-enhanced">About Us</a>
+                        <a href="rescue-form.html" class="footer-link-enhanced">Report Emergency</a>
+                        <a href="admin-dashboard.html" class="footer-link-enhanced">Admin Dashboard</a>
+                    </div>
+                    <div class="footer-column-enhanced">
+                        <h4 class="footer-heading-enhanced">Support</h4>
+                        <a href="#" class="footer-link-enhanced">Help Center</a>
+                        <a href="#" class="footer-link-enhanced">Contact Us</a>
+                        <a href="#" class="footer-link-enhanced">Privacy Policy</a>
+                        <a href="#" class="footer-link-enhanced">Terms of Service</a>
+                    </div>
+                    <div class="footer-column-enhanced">
+                        <h4 class="footer-heading-enhanced">Emergency Contact</h4>
+                        <a href="tel:+911234567890" class="footer-contact">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M3.654 1.328a.678.678 0 00-.988-.025c-.78.781-.78 2.05 0 2.832l.094.094c1.551 1.55 3.456 2.797 5.516 3.612a9.5 9.5 0 004.373 1.05c.28 0 .56-.014.837-.04a.678.678 0 00.597-.877 7.029 7.029 0 00-1.48-2.687L11.42 3.676a.678.678 0 00-.988 0l-1.094 1.094a.678.678 0 01-.988 0L6.257 2.676a.678.678 0 010-.988l1.094-1.094a.678.678 0 000-.988l-1.094-1.094a.678.678 0 00-.988 0L3.654 1.328z"/>
+                            </svg>
+                            +91 123 456 7890
+                        </a>
+                        <a href="mailto:help@resqconnect.org" class="footer-contact">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M.05 3.555A2 2 0 012 2h12a2 2 0 011.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 002 14h12a2 2 0 001.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                            </svg>
+                            help@resqconnect.org
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-enhanced">
+                <p>&copy; 2026 ResQConnect. All rights reserved. Built with ❤️ for animal welfare.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

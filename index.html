@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResQConnect - Emergency Animal Rescue</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="ResQConnect Logo" class="logo-image" width="40" height="40">
+                    <span class="logo-text">ResQConnect</span>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="admin-dashboard.html" class="nav-link">Admin</a>
+                    <a href="rescue-form.html" class="btn btn-primary btn-sm"><i class="fas fa-plus-circle"></i> Report Emergency</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-bolt"></i>
+                    <span>24/7 Emergency Response</span>
+                </div>
+                <h1 class="hero-title">
+                    Save Lives.<br>
+                    <span class="hero-title-accent">Act Fast.</span>
+                </h1>
+                <p class="hero-description">
+                    Connect animal rescuers with NGOs instantly. Share your location, report emergencies, 
+                    and help us coordinate faster rescue operations. Every second counts.
+                </p>
+                <div class="hero-buttons">
+                    <a href="rescue-form.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-plus-circle"></i>
+                        Report Emergency
+                    </a>
+                    <a href="#how-it-works" class="btn btn-outline btn-lg">
+                        <i class="fas fa-play-circle"></i>
+                        Learn How It Works
+                    </a>
+                </div>
+                <div class="hero-features-animated">
+                    <div class="animated-feature" title="24/7 Response">
+                        <div class="feature-icon-animated">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="animated-feature" title="GPS Location">
+                        <div class="feature-icon-animated">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    <div class="animated-feature" title="Save Lives">
+                        <div class="feature-icon-animated">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <img src="images/logo.png" alt="ResQConnect - Emergency Animal Rescue" class="hero-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-cogs"></i> How It Works</span>
+                <h2 class="section-title">Simple Steps to Save a Life</h2>
+                <p class="section-description">Fast, accurate, and efficient rescue coordination in three simple steps</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-step">01</div>
+                    <div class="feature-icon feature-icon-primary">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Share Location</h3>
+                    <p class="feature-description">
+                        Automatic GPS detection ensures accurate location sharing. No more confusion about where the rescue is needed.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-step">02</div>
+                    <div class="feature-icon feature-icon-amber">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Submit Details</h3>
+                    <p class="feature-description">
+                        Provide essential information about the animal's condition, urgency level, and upload photos if possible.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-step">03</div>
+                    <div class="feature-icon feature-icon-success">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="feature-title">Get Rescued</h3>
+                    <p class="feature-description">
+                        NGO teams receive instant notifications and can coordinate rescue operations efficiently with real-time tracking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-star"></i> Why Choose Us</span>
+                <h2 class="section-title">The ResQConnect Advantage</h2>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Lightning Fast</h4>
+                    <p>Average response time under 15 minutes</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h4>Easy to Use</h4>
+                    <p>Simple interface for quick reporting</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon"><i class="fas fa-headset"></i></div>
+                    <h4>24/7 Support</h4>
+                    <p>Round the clock emergency assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency CTA Section -->
+    <section class="emergency-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-icon pulse">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h2 class="cta-title">Found an Animal in Distress?</h2>
+                <p class="cta-description">
+                    Don't wait. Every moment matters. Report the emergency now and let our network of NGOs respond immediately.
+                </p>
+                <div class="cta-buttons-group">
+                    <a href="rescue-form.html" class="btn btn-cta btn-lg">
+                        <i class="fas fa-plus-circle"></i>
+                        Report Emergency Now
+                    </a>
+                    <a href="tel:1800123456" class="btn btn-cta-outline btn-lg">
+                        <i class="fas fa-phone"></i>
+                        Call Helpline
+                    </a>
+                </div>
+                <div class="cta-trust">
+                    <span><i class="fas fa-check-circle"></i> Free Service</span>
+                    <span><i class="fas fa-check-circle"></i> Instant Response</span>
+                    <span><i class="fas fa-check-circle"></i> 100% Confidential</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Enhanced -->
+    <footer class="footer-enhanced">
+        <div class="container">
+            <div class="footer-content-enhanced">
+                <div class="footer-brand-enhanced">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="ResQConnect Logo" class="logo-image" width="48" height="48">
+                        <span class="logo-text">ResQConnect</span>
+                    </div>
+                    <p class="footer-tagline">Emergency animal rescue coordination platform. Connecting rescuers with NGOs to save lives, one animal at a time.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-enhanced">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="rescue-form.html" class="footer-link">Report Emergency</a>
+                        <a href="admin-dashboard.html" class="footer-link">NGO Dashboard</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Emergency</h4>
+                        <a href="tel:1800123456" class="footer-link"><i class="fas fa-phone"></i> 1800-123-456 (Toll Free)</a>
+                        <a href="mailto:help@resqconnect.org" class="footer-link"><i class="fas fa-envelope"></i> help@resqconnect.org</a>
+                        <a href="#" class="footer-link"><i class="fas fa-clock"></i> 24/7 Available</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Support</h4>
+                        <a href="#" class="footer-link">FAQs</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-enhanced">
+                <p>&copy; 2026 ResQConnect. Made with ❤️ for animals everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

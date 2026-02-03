@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Instructions - ResQConnect</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #DC2626;
+            border-bottom: 3px solid #DC2626;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #374151;
+            margin-top: 30px;
+        }
+        .step {
+            background: #F9FAFB;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #DC2626;
+            border-radius: 5px;
+        }
+        .step h3 {
+            margin-top: 0;
+            color: #DC2626;
+        }
+        code {
+            background: #1F2937;
+            color: #10B981;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .success {
+            background: #D1FAE5;
+            border-left-color: #10B981;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .note {
+            background: #FEF3C7;
+            border-left: 4px solid #F59E0B;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 ResQConnect Logo Setup</h1>
+        
+        <div class="success">
+            <strong>✓ HTML Files Updated!</strong><br>
+            All pages are now configured to use your logo image.
+        </div>
+
+        <h2>📋 Final Steps to Add Your Logo</h2>
+
+        <div class="step">
+            <h3>Step 1: Save Your Logo Image</h3>
+            <p>Save the ResQConnect logo image (the one with the shield, paw print, and medical cross) as:</p>
+            <p><code>images/logo.png</code></p>
+            <p>The image should be in PNG format with a transparent background for best results.</p>
+        </div>
+
+        <div class="step">
+            <h3>Step 2: Recommended Image Specifications</h3>
+            <ul>
+                <li><strong>Format:</strong> PNG (with transparency)</li>
+                <li><strong>Size:</strong> 512x512 pixels or similar square aspect ratio</li>
+                <li><strong>File Size:</strong> Keep under 200KB for fast loading</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Step 3: Verify the Setup</h3>
+            <p>After saving the logo, refresh your browser and check:</p>
+            <ul>
+                <li>✓ Logo appears in the navigation bar (top left)</li>
+                <li>✓ Logo appears in the footer</li>
+                <li>✓ Favicon appears in the browser tab</li>
+                <li>✓ Logo displays on all pages (Home, Form, Dashboard)</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <strong>💡 Note:</strong> The logo will automatically scale to the correct size on different pages. The image is styled to maintain its aspect ratio and look great on mobile devices too!
+        </div>
+
+        <h2>📁 Current File Structure</h2>
+        <pre style="background: #1F2937; color: #D1D5DB; padding: 20px; border-radius: 5px; overflow-x: auto;">
+ResQConnect/
+├── index.html (Updated ✓)
+├── rescue-form.html (Updated ✓)
+├── admin-dashboard.html (Updated ✓)
+├── styles.css (Updated ✓)
+├── app.js
+├── images/
+│   ├── logo.png (← Place your logo here)
+│   └── README.txt
+└── SETUP-INSTRUCTIONS.html (This file)
+        </pre>
+
+        <h2>🎨 What Was Updated</h2>
+        <ul>
+            <li><strong>All HTML files:</strong> Replaced SVG placeholder logos with image references</li>
+            <li><strong>Favicon added:</strong> Your logo will appear in browser tabs</li>
+            <li><strong>Apple Touch Icon:</strong> Logo will display when saved to mobile home screens</li>
+            <li><strong>CSS updated:</strong> Added proper styling for logo images</li>
+            <li><strong>Responsive design:</strong> Logo scales appropriately on all devices</li>
+        </ul>
+
+        <div class="success" style="margin-top: 40px;">
+            <strong>🎉 You're Almost Done!</strong><br>
+            Just save your logo image to the <code>images/</code> folder and you're all set!
+        </div>
+
+        <p style="text-align: center; margin-top: 40px; color: #6B7280;">
+            <a href="index.html" style="color: #DC2626; text-decoration: none; font-weight: bold;">← Back to Home</a>
+        </p>
+    </div>
+</body>
+</html>

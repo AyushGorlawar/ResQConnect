@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Emergency - ResQConnect</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="ResQConnect Logo" class="logo-image" width="40" height="40">
+                    <span class="logo-text">ResQConnect</span>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="admin-dashboard.html" class="nav-link">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container-sm">
+            <div class="form-header">
+                <div class="alert alert-warning">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Emergency Report - Please provide accurate information</span>
+                </div>
+                <h1 class="page-title">Report Animal Emergency</h1>
+                <p class="page-description">Fill in the details below. Your location will be automatically detected for faster rescue coordination.</p>
+            </div>
+
+            <form id="rescueForm" class="rescue-form">
+                <!-- Location Section -->
+                <div class="form-section-card">
+                    <h3 class="form-section-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        Location Information
+                    </h3>
+                    
+                    <div class="form-group">
+                        <button type="button" id="getLocationBtn" class="btn btn-outline btn-block">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+                                <path fill-rule="evenodd" d="M9 1a1 1 0 011 1v.5a6.5 6.5 0 016 6.5h.5a1 1 0 110 2H16a6.5 6.5 0 01-6 6.5v.5a1 1 0 11-2 0v-.5A6.5 6.5 0 012 11h-.5a1 1 0 110-2H2a6.5 6.5 0 016-6.5V2a1 1 0 011-1zm0 4.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zM9 8a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"/>
+                            </svg>
+                            Detect My Location Automatically
+                        </button>
+                        <div id="locationStatus" class="location-status"></div>
+                    </div>
+
+                    <input type="hidden" id="latitude" name="latitude">
+                    <input type="hidden" id="longitude" name="longitude">
+
+                    <div class="form-group">
+                        <label for="address" class="form-label">Address/Landmark <span class="required">*</span></label>
+                        <input type="text" id="address" name="address" class="form-input" placeholder="Nearest landmark or address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city" class="form-label">City <span class="required">*</span></label>
+                            <input type="text" id="city" name="city" class="form-input" placeholder="City name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pincode" class="form-label">Pincode <span class="required">*</span></label>
+                            <input type="text" id="pincode" name="pincode" class="form-input" placeholder="000000" pattern="[0-9]{6}" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animal Information -->
+                <div class="form-section-card">
+                    <h3 class="form-section-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"/>
+                        </svg>
+                        Animal Details
+                    </h3>
+
+                    <div class="form-group">
+                        <label for="animalType" class="form-label">Animal Type <span class="required">*</span></label>
+                        <select id="animalType" name="animalType" class="form-input" required>
+                            <option value="">Select animal type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="cow">Cow/Buffalo</option>
+                            <option value="bird">Bird</option>
+                            <option value="wildlife">Wildlife</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="condition" class="form-label">Animal Condition <span class="required">*</span></label>
+                        <select id="condition" name="condition" class="form-input" required>
+                            <option value="">Select condition</option>
+                            <option value="injured">Injured</option>
+                            <option value="sick">Sick/Weak</option>
+                            <option value="trapped">Trapped</option>
+                            <option value="accident">Road Accident</option>
+                            <option value="abuse">Abuse/Attack</option>
+                            <option value="abandoned">Abandoned</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgency" class="form-label">Urgency Level <span class="required">*</span></label>
+                        <div class="urgency-options">
+                            <label class="urgency-option urgency-critical">
+                                <input type="radio" name="urgency" value="critical" required>
+                                <div class="urgency-content">
+                                    <span class="urgency-label">Critical</span>
+                                    <span class="urgency-desc">Life-threatening</span>
+                                </div>
+                            </label>
+                            <label class="urgency-option urgency-high">
+                                <input type="radio" name="urgency" value="high" required>
+                                <div class="urgency-content">
+                                    <span class="urgency-label">High</span>
+                                    <span class="urgency-desc">Urgent attention</span>
+                                </div>
+                            </label>
+                            <label class="urgency-option urgency-medium">
+                                <input type="radio" name="urgency" value="medium" required>
+                                <div class="urgency-content">
+                                    <span class="urgency-label">Medium</span>
+                                    <span class="urgency-desc">Needs help soon</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description" class="form-label">Additional Details</label>
+                        <textarea id="description" name="description" class="form-input" rows="4" placeholder="Describe the situation, any visible injuries, behavior, etc."></textarea>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="form-section-card">
+                    <h3 class="form-section-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                        Your Contact Information
+                    </h3>
+
+                    <div class="form-group">
+                        <label for="reporterName" class="form-label">Your Name <span class="required">*</span></label>
+                        <input type="text" id="reporterName" name="reporterName" class="form-input" placeholder="Full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 98765 43210" pattern="[0-9+\s-]+" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email (Optional)</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        Submit Emergency Report
+                    </button>
+                    <p class="form-note">By submitting, you agree that the information provided is accurate and will be shared with rescue NGOs.</p>
+                </div>
+            </form>
+
+            <!-- Success Message -->
+            <div id="successMessage" class="success-modal" style="display: none;">
+                <div class="success-modal-content">
+                    <div class="success-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="30" fill="#10B981" opacity="0.1"/>
+                            <path d="M20 32L28 40L44 24" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h2 class="success-title">Emergency Reported Successfully!</h2>
+                    <p class="success-description">
+                        Your request has been sent to nearby NGOs. They will contact you shortly to coordinate the rescue.
+                    </p>
+                    <p class="success-id">Request ID: <strong id="requestId"></strong></p>
+                    <div class="success-actions">
+                        <a href="index.html" class="btn btn-outline">Back to Home</a>
+                        <a href="rescue-form.html" class="btn btn-primary">Report Another</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="ResQConnect Logo" class="logo-image" width="40" height="40">
+                        <span class="logo-text">ResQConnect</span>
+                    </div>
+                    <p class="footer-tagline">Emergency animal rescue coordination platform</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ResQConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
