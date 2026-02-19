@@ -21,4 +21,4 @@ To improve the speed, accuracy, and efficiency of animal rescue operations using
 ## 👨‍💻 Created By
 
 - **Ayush** – [GitHub](https://github.com/AyushGorlawar)
-- **Vrinda** – [GitHub](https://github.com/vrinda8331-prog)
+- **Rishav** – [GitHub](https://github.com/rishav-x4CC4)
